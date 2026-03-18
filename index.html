@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hiba Home Interior Designer</title>
+
+<style>
+body {margin:0; font-family:sans-serif;}
+
+/* NAVBAR */
+nav {
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.5);
+backdrop-filter: blur(10px);
+display:flex;
+justify-content:center;
+z-index:1000;
+}
+nav a {
+color:white;
+padding:15px;
+text-decoration:none;
+}
+nav a:hover {color:#c9a96e;}
+
+/* SLIDER */
+.slider {
+height:100vh;
+background-size:cover;
+background-position:center;
+animation:slide 12s infinite;
+}
+@keyframes slide {
+0% {background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');}
+33% {background-image:url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0');}
+66% {background-image:url('https://images.unsplash.com/photo-1600585154526-990dced4db0d');}
+100% {background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');}
+}
+
+/* HERO TEXT */
+.hero-text {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+text-align:center;
+}
+.hero-text h1 {font-size:50px;}
+
+/* SECTION */
+section {padding:80px 20px; text-align:center;}
+h2 {color:#2C3E50;}
+
+/* SERVICES */
+.services {
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+.card {
+width:280px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+.card:hover {transform:translateY(-10px);}
+.card img {width:60px;}
+
+/* PORTFOLIO */
+.portfolio {
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+.portfolio img {
+width:300px;
+height:200px;
+object-fit:cover;
+transition:0.3s;
+}
+.portfolio img:hover {
+transform:scale(1.1);
+}
+
+/* CONTACT FORM */
+form {
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+input,textarea {
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+button {
+background:#c9a96e;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer {
+background:#111;
+color:white;
+padding:20px;
+}
+
+/* FLOAT BUTTONS */
+.whatsapp, .call {
+position:fixed;
+bottom:20px;
+padding:15px;
+border-radius:50%;
+color:white;
+text-decoration:none;
+}
+.whatsapp {right:20px; background:#25D366;}
+.call {left:20px; background:#3498db;}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="slider"></div>
+
+<div class="hero-text">
+<h1>Hiba Home Interior Designer</h1>
+<p>Luxury Interior | Modern Design | Dream Home</p>
+</div>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/000000/sofa.png">
+<h3>Living Room</h3>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/000000/bed.png">
+<h3>Bedroom</h3>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/000000/kitchen.png">
+<h3>Kitchen</h3>
+</div>
+
+</div>
+</section>
+
+<section id="portfolio">
+<h2>Our Work</h2>
+<div class="portfolio">
+
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+<img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e">
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>📍 Noida, up</p>
+<p>📞 7095794302</p>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<button>Send Message</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Hiba Home Interior Designer</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917095794302">💬</a>
+<a class="call" href="tel:7095794302">📞</a>
+
+</body>
+</html>
